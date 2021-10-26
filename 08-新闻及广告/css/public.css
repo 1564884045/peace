@@ -1,0 +1,105 @@
+body,p,h1,h2,h3,h4,dl,dd{
+    margin: 0;
+}
+ul,ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    vertical-align: middle;
+}
+button{
+    border: none;
+    background: none;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+}
+body{
+    background: #f4f4f4;
+}
+
+
+/* 登录弹窗 */
+.dialog{
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, .7);
+
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 10;
+
+	display: none;
+}
+.dialog.show{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.dialog .wrap{
+	position: relative;
+}
+.dialog h3{
+	font-size: 24px;
+	line-height: 42px;
+	text-align: center;
+	color: #fffefe;
+}
+.dialog .close{
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	top: 6px;
+	right: 6px;
+	background: url(../images/dia-login-close.png) no-repeat center;
+}
+
+
+/* 轮播图公用样式 */
+.carousel{
+	position: relative;
+	overflow: hidden;
+}
+.carouselInner{
+	display: flex;
+	position: absolute;
+	left: 0;
+}
+.carouselIndicators{
+	position: absolute;
+	display: flex;
+}
+.carouselIndicators span{
+	cursor: pointer;
+	background: #fff;
+}
+.carouselIndicators span:hover,.carouselIndicators span.active{
+	background: #feb012;
+}
+
+
+/* 选项卡 */
+.tabContent{
+	display: none;
+}
+.tabContent.active{
+	display: block;
+}
+
+/* more */
+.more{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.more a{
+	width: 17px;
+	height: 17px;
+	background: url(../images/spr_icon.png);
+}
